@@ -13,7 +13,7 @@ export default function Navbar() {
   }, [isLight]);
 
   return (
-    <nav className="light:text-stone-900 text-purple-400 w-full py-4 px-6 flex justify-between items-center bg-transparent">
+    <nav className="w-full py-4 px-6 flex justify-between items-center bg-transparent">
       <div className="flex-1 flex justify-center space-x-6">
         {["Projects", "Skills", "Contact"].map((text) => (
           <a

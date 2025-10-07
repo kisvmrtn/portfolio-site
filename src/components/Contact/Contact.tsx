@@ -11,9 +11,9 @@ type ContactProps = {
 
 export default function Contact({ contact }: ContactProps) {
   return (
-    <section className="light:text-stone-900 text-purple-400 py-16 px-6">
+    <section id="contact" className="py-16 px-6">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Contact</h2>
+        <h1 className="text-4xl font-bold mb-4">Contact</h1>
         <p className="mb-8">
           Feel free to reach out via any of the platforms below.
         </p>
@@ -21,7 +21,7 @@ export default function Contact({ contact }: ContactProps) {
         <div className="flex flex-col items-center space-y-4">
           <a
             href={`mailto:${contact.email}`}
-            className="flex items-center space-x-3 hover:text-[#977be3] transition"
+            className="flex items-center space-x-3 hover:text-[#977be3] light:hover:text-blue-500 transition"
           >
             <FiMail className="w-5 h-5" />
             <span>{contact.email}</span>
@@ -31,7 +31,7 @@ export default function Contact({ contact }: ContactProps) {
             href={contact.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-3 hover:text-[#977be3] transition"
+            className="flex items-center space-x-3 hover:text-[#977be3] light:hover:text-blue-500 transition"
           >
             <FiGithub className="w-5 h-5" />
             <span>{contact.github.replace("https://", "")}</span>
@@ -41,7 +41,7 @@ export default function Contact({ contact }: ContactProps) {
             href={contact.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-3 hover:text-[#977be3] transition"
+            className="flex items-center space-x-3 hover:text-[#977be3] light:hover:text-blue-500 transition"
           >
             <PiLinkedinLogo className="w-5 h-5" />
             <span>{contact.linkedin.replace("https://", "")}</span>

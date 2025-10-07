@@ -26,27 +26,21 @@ export const content = {
   projects: [
     {
       title: "Bookworm",
-      img: "",
+      img: "-",
       description:
         "Bookworm is a personal reading tracker where users can log books they've read, add custom details, rate them, and manage their collection securely with authentication and API-powered data handling.",
       gitlink: "https://github.com/kisvmrtn/bookworm-app.git",
-      link: "-",
+      link: "",
       tags: ["React", "TypeScript", "Tailwind CSS"],
     },
     {
       title: "LearningCards",
-      img: "",
+      img: "-",
       description:
         "LearningCards is a dynamic quiz app where users answer multiple-choice questions using interactive flashcards. After selecting an answer, the card flips to reveal the correct solution. Points are awarded for correct answers, and scores can be saved locally with a custom username",
       gitlink: "https://github.com/kisvmrtn/tanuloKartya-REACT.git",
       link: "https://kisvmrtn.github.io/tanuloKartya-REACT/",
-    },
-    {
-      title: "Example",
-      img: "",
-      description: "Example",
-      gitlink: "link",
-      link: "link",
+      tags: ["React", "JavaScript", "Tailwind CSS"],
     },
   ],
 };
