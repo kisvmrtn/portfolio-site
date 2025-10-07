@@ -1,11 +1,13 @@
 @import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #977be3;
   background-color: #282828;
 
   font-synthesis: none;

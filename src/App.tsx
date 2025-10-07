@@ -6,8 +6,13 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <About about={content.about}></About>
+      <div
+        id="app-root"
+        className="bg-zinc-800 light:bg-slate-200 h-screen w-full"
+      >
+        <Navbar />
+        <About about={content.about} />
+      </div>
     </>
   );
 }
