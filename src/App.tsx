@@ -1,9 +1,13 @@
+import { content } from "./data/content";
+import About from "./components/About/About";
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <Navbar></Navbar>
+      <About about={content.about}></About>
     </>
   );
 }
