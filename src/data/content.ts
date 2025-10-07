@@ -11,16 +11,42 @@ export const content = {
     github: "https://github.com/kisvmrtn",
     linkedin: "https://www.linkedin.com/in/kisvaradimarton/",
   },
+  skills: {
+    items: [
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "JavaScript",
+      "React",
+
+      "Tailwind CSS",
+      "Git",
+    ],
+  },
   projects: [
     {
-      title: "",
-      description: "",
-      link: "",
+      title: "Bookworm",
+      img: "",
+      description:
+        "Bookworm is a personal reading tracker where users can log books they've read, add custom details, rate them, and manage their collection securely with authentication and API-powered data handling.",
+      gitlink: "https://github.com/kisvmrtn/bookworm-app.git",
+      link: "-",
+      tags: ["React", "TypeScript", "Tailwind CSS"],
     },
     {
-      title: "",
-      description: "",
-      link: "",
+      title: "LearningCards",
+      img: "",
+      description:
+        "LearningCards is a dynamic quiz app where users answer multiple-choice questions using interactive flashcards. After selecting an answer, the card flips to reveal the correct solution. Points are awarded for correct answers, and scores can be saved locally with a custom username",
+      gitlink: "https://github.com/kisvmrtn/tanuloKartya-REACT.git",
+      link: "https://kisvmrtn.github.io/tanuloKartya-REACT/",
+    },
+    {
+      title: "Example",
+      img: "",
+      description: "Example",
+      gitlink: "link",
+      link: "link",
     },
   ],
 };
