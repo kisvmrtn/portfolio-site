@@ -1,5 +1,6 @@
 import { FiGithub } from "react-icons/fi";
 import { BiLinkExternal } from "react-icons/bi";
+
 type Project = {
   title: string;
   img: string;
@@ -14,9 +15,15 @@ type ProjectCardProps = {
 };
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="w-100 rounded-xl shadow-2xl hover:shadow-purple-500/30 light:hover:shadow-blue-500/30 overflow-hidden transition-transform hover:scale-[1.02] duration-200">
+    <div className="w-full max-w-[400px] rounded-xl shadow-2xl hover:shadow-purple-500/30 light:hover:shadow-blue-500/30 overflow-hidden transition-transform hover:scale-[1.02] duration-200">
       <div className="h-48 bg-gray-200 dark:bg-zinc-500 flex items-center justify-center">
-        <span className="text-gray-500 dark:text-gray-400">Image</span>
+        {project.img && (
+          <img
+            src={project.img}
+            alt={`${project.title} preview`}
+            className="w-full h-48 object-cover"
+          />
+        )}
       </div>
 
       <div className="p-6 space-y-4">

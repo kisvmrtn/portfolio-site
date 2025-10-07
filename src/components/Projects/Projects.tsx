@@ -15,21 +15,25 @@ type ProjectsProps = {
 export default function Projects({ projects }: ProjectsProps) {
   return (
     <>
-      <h1 className="text-4xl font-bold mb-4 text-center">Projects</h1>
-      <span className="text-center mb-10 m-20">
-        <p>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center px-4 print:hidden">
+        Projects
+      </h1>
+      <span className="text-center mb-6 md:mb-10 px-4 block print:hidden">
+        <p className="text-sm md:text-base">
           If you want to check out Private repositories, feel free to contact
           me.
         </p>
       </span>
       <section
         id="projects"
-        className="w-full py-4 px-6 flex justify-between items-center bg-transparent"
+        className="w-full py-4 px-4 md:px-6 bg-transparent print:hidden"
       >
-        <div className=" mx-auto flex gap-10 text-center">
-          {projects.map((project) => (
-            <ProjectCard project={project} />
-          ))}
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-10">
+            {projects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </div>
         </div>
       </section>
     </>

@@ -26,7 +26,7 @@ export const content = {
   projects: [
     {
       title: "Bookworm",
-      img: "-",
+      img: "",
       description:
         "Bookworm is a personal reading tracker where users can log books they've read, add custom details, rate them, and manage their collection securely with authentication and API-powered data handling.",
       gitlink: "https://github.com/kisvmrtn/bookworm-app.git",
@@ -35,7 +35,7 @@ export const content = {
     },
     {
       title: "LearningCards",
-      img: "-",
+      img: "/images/learningcards-img.png",
       description:
         "LearningCards is a dynamic flashcard quiz app designed for Hungarian users where they answer multiple-choice questions using interactive flashcards. After selecting an answer, the card flips to reveal the correct solution. Points are awarded for correct answers, and scores can be saved locally with a custom username",
       gitlink: "https://github.com/kisvmrtn/tanuloKartya-REACT.git",

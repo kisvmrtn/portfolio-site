@@ -11,7 +11,7 @@ function App() {
     <>
       <div
         id="app-root"
-        className="bg-zinc-800 light:bg-slate-200 text-purple-400 light:text-stone-900 min-h-screen w-full"
+        className="bg-zinc-800 light:bg-slate-200 text-purple-400 light:text-stone-900 min-h-screen w-full print:bg-white print:text-black"
       >
         <Navbar />
         <About about={content.about} />

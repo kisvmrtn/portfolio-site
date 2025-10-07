@@ -3,9 +3,14 @@ import { BsSun, BsMoon } from "react-icons/bs";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  const [isLight, setIsLight] = useState(false);
+  const [isLight, setIsLight] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "light";
+  });
 
   useEffect(() => {
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+
     const appRoot = document.getElementById("app-root");
     isLight
       ? appRoot?.classList.add("light")
@@ -13,13 +18,13 @@ export default function Navbar() {
   }, [isLight]);
 
   return (
-    <nav className="w-full py-4 px-6 flex justify-between items-center bg-transparent">
-      <div className="flex-1 flex justify-center space-x-6">
+    <nav className="w-full py-3 md:py-4 px-4 md:px-6 flex justify-between items-center bg-transparent print:hidden">
+      <div className="flex-1 flex justify-center space-x-3 md:space-x-6">
         {["Projects", "Skills", "Contact"].map((text) => (
           <a
             key={text}
             href={`#${text.toLowerCase()}`}
-            className="group px-3 py-2 font-medium cursor-pointer"
+            className="group px-2 md:px-3 py-2 text-sm md:text-base font-medium cursor-pointer"
           >
             <span className="relative inline-block">
               {text}
@@ -31,7 +36,7 @@ export default function Navbar() {
 
       <div className="flex items-center space-x-4 ">
         <button className="flex items-center space-x-2 font-medium hover:text-purple-300 light:hover:text-neutral-600 cursor-pointer">
-          <FiDownload className="w-5 h-5" />
+          <FiDownload className="w-5 h-5" onClick={() => window.print()} />
         </button>
 
         <button

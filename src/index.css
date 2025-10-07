@@ -22,3 +22,17 @@ html {
 button {
   cursor: pointer;
 }
+
+@page {
+  size: auto;
+  margin: 0mm;
+}
+
+@media print {
+  html,
+  body {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
