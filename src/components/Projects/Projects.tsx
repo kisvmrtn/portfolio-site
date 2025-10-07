@@ -18,7 +18,7 @@ export default function Projects({ projects }: ProjectsProps) {
       <h1 className="text-4xl font-bold mb-4 text-center">Projects</h1>
       <span className="text-center mb-10 m-20">
         <p>
-          If you want to check out a Private repositories, feel free to contact
+          If you want to check out Private repositories, feel free to contact
           me.
         </p>
       </span>
