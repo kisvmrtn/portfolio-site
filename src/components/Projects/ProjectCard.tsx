@@ -15,7 +15,7 @@ type ProjectCardProps = {
 };
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="w-full max-w-[400px] rounded-xl shadow-2xl hover:shadow-purple-500/30 light:hover:shadow-blue-500/30 overflow-hidden transition-transform hover:scale-[1.02] duration-200">
+    <div className="w-full max-w-[400px] rounded-xl shadow-2xl hover:shadow-indigo-500/30 light:hover:shadow-blue-500/30 overflow-hidden transition-transform hover:scale-[1.02] duration-200">
       <div className="h-48 bg-gray-200 dark:bg-zinc-500 flex items-center justify-center">
         {project.img && (
           <img
@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs bg-purple-200 light:bg-blue-500 text-purple-800 light:text-purple-100 px-2 py-1 rounded-full"
+              className="text-xs bg-blue-200 light:bg-blue-500 text-indigo-800 light:text-purple-100 px-2 py-1 rounded-full"
             >
               {tag}
             </span>
@@ -55,7 +55,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-white bg-purple-700 light:bg-black hover:bg-purple-600 light:hover:bg-zinc-600 px-3 py-2 rounded transition"
+              className="flex items-center gap-2 text-sm text-white bg-indigo-600 light:bg-black hover:bg-indigo-500 light:hover:bg-zinc-600 px-3 py-2 rounded transition"
             >
               <BiLinkExternal className="w-5 h-5" />
             </a>
