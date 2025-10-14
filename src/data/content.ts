@@ -40,7 +40,7 @@ export const content = {
         "LearningCards is a dynamic flashcard quiz app designed for Hungarian users where they answer multiple-choice questions using interactive flashcards. After selecting an answer, the card flips to reveal the correct solution. Points are awarded for correct answers, and scores can be saved locally with a custom username",
       gitlink: "https://github.com/kisvmrtn/tanuloKartya-REACT.git",
       link: "https://kisvmrtn.github.io/tanuloKartya-REACT/",
-      tags: ["React", "JavaScript"],
+      tags: ["React"],
     },
   ],
 };
