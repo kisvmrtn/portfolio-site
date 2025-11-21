@@ -18,7 +18,6 @@ export const content = {
       "TypeScript",
       "JavaScript",
       "React",
-
       "Tailwind CSS",
       "Git",
     ],
@@ -26,12 +25,19 @@ export const content = {
   projects: [
     {
       title: "Bookworm",
-      img: "",
+      img: "/portfolio-site/images/bookworm-img.png",
       description:
         "Bookworm is a personal reading tracker where users can log books they've read, add custom details, rate them, and manage their collection securely with authentication and API-powered data handling.",
       gitlink: "https://github.com/kisvmrtn/bookworm-app.git",
       link: "",
       tags: ["React", "TypeScript", "Tailwind CSS"],
+      images: [
+        "/portfolio-site/images/bookworm/1.png",
+        "/portfolio-site/images/bookworm/2.png",
+        "/portfolio-site/images/bookworm/3.png",
+        "/portfolio-site/images/bookworm/4.png",
+        "/portfolio-site/images/bookworm/5.png",
+      ],
     },
     {
       title: "LearningCards",
@@ -41,6 +47,7 @@ export const content = {
       gitlink: "https://github.com/kisvmrtn/tanuloKartya-REACT.git",
       link: "https://kisvmrtn.github.io/tanuloKartya-REACT/",
       tags: ["React"],
+      images: ["/portfolio-site/images/learningcards-img.png"],
     },
   ],
 };

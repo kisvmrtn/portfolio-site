@@ -7,6 +7,7 @@ type Project = {
   gitlink: string;
   link: string;
   tags: string[];
+  images: string[];
 };
 
 type ProjectsProps = {
