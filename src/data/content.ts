@@ -24,10 +24,10 @@ export const content = {
   },
   projects: [
     {
-      title: "Bookworm",
+      title: "Bookworm Web",
       img: "/portfolio-site/images/bookworm-img.png",
       description:
-        "Bookworm is a personal reading tracker where users can log books they've read, add custom details, rate them, and manage their collection securely with authentication and API-powered data handling.",
+        "Bookworm Web is a browser-based reading tracker where users can log books, add custom details, rate them, and manage their collection securely with authentication and API-powered data handling.",
       gitlink: "https://github.com/kisvmrtn/bookworm-app.git",
       link: "",
       tags: ["React", "TypeScript", "Tailwind CSS"],
@@ -37,6 +37,22 @@ export const content = {
         "/portfolio-site/images/bookworm/3.png",
         "/portfolio-site/images/bookworm/4.png",
         "/portfolio-site/images/bookworm/5.png",
+      ],
+    },
+    {
+      title: "Bookworm Mobile",
+      img: "/portfolio-site/images/2.jpg",
+      description:
+        "Bookworm Mobile is the React Native version of the Bookworm app, allowing users to track and manage their reading collection on the go with the same secure authentication and API-driven data handling.",
+      gitlink: "https://github.com/kisvmrtn/bookworm-mobile.git",
+      link: "",
+      tags: ["React Native", "TypeScript"],
+      images: [
+        "/portfolio-site/images/bookwormmobile/1.jpg",
+        "/portfolio-site/images/bookwormmobile/2.jpg",
+        "/portfolio-site/images/bookwormmobile/3.jpg",
+        "/portfolio-site/images/bookwormmobile/4.jpg",
+        "/portfolio-site/images/bookwormmobile/5.jpg",
       ],
     },
     {
