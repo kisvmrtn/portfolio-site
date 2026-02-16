@@ -61,10 +61,9 @@ export default function ImageGallery({ images, onClose }: ImageGalleryProps) {
             key={index}
             src={img}
             alt=""
-            className="
-              w-14 h-14 object-cover rounded-sm cursor-pointer border-2 border-transparent hover:border-white
-              md:w-20 md:h-20
-            "
+            className={`w-14 h-14 object-cover rounded-sm cursor-pointer border-2 md:w-20 md:h-20
+                      ${index === image ? "border-white" : "border-transparent hover:border-white"}
+                      `}
             onClick={() => setImage(index)}
           />
         ))}

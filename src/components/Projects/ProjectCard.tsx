@@ -39,7 +39,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <img
               src={project.img}
               alt={`${project.title} preview`}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover object-center"
             />
           )}
         </div>
